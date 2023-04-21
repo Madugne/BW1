@@ -9,7 +9,8 @@
 
 /* - - - css reset - - - */
 
-html, body {
+html,
+body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -107,7 +108,7 @@ input:checked::before {
     visibility: visible;
 }
 
-#buttonWelcomePage{
+#buttonWelcomePage {
     padding: 0.9em 3em;
     font-size: 1.1em;
     background-color: transparent;
@@ -116,19 +117,21 @@ input:checked::before {
     font-weight: bolder;
 }
 
-.customActive{ /*classe aggiunta con js per gestire il button dopo checkBox*/
-        background-color : #00FFFF !important;
-        box-shadow: 0 0 5px 5px #01f9f981;
-        border: 1px solid #00FFFF;
-        color : black !important;
-        border : none !important;
-        cursor: pointer;
+.customActive {
+    /*classe aggiunta con js per gestire il button dopo checkBox*/
+    background-color: #00FFFF !important;
+    box-shadow: 0 0 5px 5px #01f9f981;
+    border: 1px solid #00FFFF;
+    color: black !important;
+    border: none !important;
+    cursor: pointer;
 }
 
 
 /* - - - questionPage - - - */
 
-#questionPageHeader { /*header modificato rispetto ad header generale per ospitare il timer*/
+#questionPageHeader {
+    /*header modificato rispetto ad header generale per ospitare il timer*/
     width: 85%;
     margin: 3% auto 3% auto;
 }
@@ -139,7 +142,7 @@ input:checked::before {
 
 #questionPageTitle {
     width: 60%;
-    margin:0 auto;
+    margin: 0 auto;
 }
 
 #questionPageTitle h1 {
@@ -189,17 +192,17 @@ input:checked::before {
     width: 150px;
     height: 150px;
 }
-  
+
 .base-timer__circle {
     fill: none;
     stroke: none;
 }
-  
+
 .base-timer__path-elapsed {
     stroke-width: 10px;
     stroke: lightgrey;
 }
-  
+
 .base-timer__path-remaining {
     stroke-width: 10px;
     transform: rotate(90deg);
@@ -208,19 +211,19 @@ input:checked::before {
     fill-rule: nonzero;
     stroke: currentColor;
 }
-  
+
 .base-timer__path-remaining.green {
     color: #00FFFF;
 }
-  
+
 .base-timer__path-remaining.orange {
     color: orange;
 }
-  
+
 .base-timer__path-remaining.red {
     color: red;
 }
-  
+
 .base-timer__label {
     position: absolute;
     width: 150px;
@@ -233,14 +236,14 @@ input:checked::before {
     text-align: center;
 }
 
-#app{
+#app {
     margin-left: 80%;
     width: 10px;
 }
 
 .secondsFont {
     font-size: 30px;
-    display:grid;
+    display: grid;
     text-align: center;
 }
 
@@ -252,7 +255,7 @@ input:checked::before {
 
 #resultsPageTitle {
     width: 50%;
-    margin:0 auto;
+    margin: 0 auto;
 }
 
 #resultsPageTitle h1 {
@@ -269,7 +272,9 @@ input:checked::before {
     font-size: 1.5em;
 }
 
-#left, #center, #right {
+#left,
+#center,
+#right {
     display: inline-block;
     font-family: 'Outfit', sans-serif;
 }
@@ -290,12 +295,12 @@ input:checked::before {
 }
 
 #rateUs button:hover {
-        background-color : #00FFFF;
-        box-shadow: 0 0 5px 5px #01f9f981;
-        color: black;
-        border: 1px solid #00FFFF;
-        border : none;
-        cursor: pointer;
+    background-color: #00FFFF;
+    box-shadow: 0 0 5px 5px #01f9f981;
+    color: black;
+    border: 1px solid #00FFFF;
+    border: none;
+    cursor: pointer;
 }
 
 
@@ -355,12 +360,12 @@ hr {
 }
 
 #moreInfo button:hover {
-        background-color : #00FFFF;
-        box-shadow: 0 0 5px 5px #01f9f981;
-        color: black;
-        border: 1px solid #00FFFF;
-        border : none;
-        cursor: pointer;
+    background-color: #00FFFF;
+    box-shadow: 0 0 5px 5px #01f9f981;
+    color: black;
+    border: 1px solid #00FFFF;
+    border: none;
+    cursor: pointer;
 }
 
 /* - - - feedbackPage rating - - - */
@@ -376,7 +381,7 @@ hr {
     overflow: auto;
     padding-left: 25px;
     padding-right: 25px;
-    list-style-type: none
+    list-style-type: none;
 }
 
 .rating-item {
@@ -396,7 +401,8 @@ hr {
 }
 
 /* riempie tutte le stelle con hover */
-.rating:hover .rating-item::before {/*da verificare*/
+.rating:hover .rating-item::before {
+    /*da verificare*/
     content: "\2605";
 }
 
